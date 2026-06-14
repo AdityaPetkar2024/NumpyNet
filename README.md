@@ -38,7 +38,7 @@ to solve.
 
 ## Notebook
 
-[`numpynet_fashion_mnist.ipynb`] — full 
+[`NumpyNet_fashion_mnist.ipynb`](./NumpyNet_fashion_mnist.ipynb) — full 
 implementation, training run, confusion matrix, and analysis.
 
 ## Next
