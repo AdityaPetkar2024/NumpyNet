@@ -1,6 +1,6 @@
 # NumpyNet
 
-A neural network library implemented from scratch using only NumPy — 
+A neural network library implemented from scratch using only NumPy, 
 no PyTorch, TensorFlow, or autograd. Built while working through 
 *Neural Networks from Scratch* (Kinsley & Kukiela), implementing every 
 forward pass, backward pass, and parameter update manually.
@@ -23,22 +23,22 @@ Trained on Fashion MNIST (60,000 train / 10,000 test images, 28x28
 grayscale, 10 classes):
 
 - **87.9% validation accuracy** after 10 epochs
-- Training and validation accuracy stay close (88.6% vs 87.9%) — L2 + 
+- Training and validation accuracy stay close (88.6% vs 87.9%) , L2 + 
   dropout are preventing significant overfitting
 
 ## What I found interesting
 
 The confusion matrix shows the model struggles most with **Shirt (65% 
-accuracy)** — confused with T-shirt/top, Coat, and Pullover. These are 
+accuracy)** , confused with T-shirt/top, Coat, and Pullover. These are 
 all upper-body garments with overlapping silhouettes. A flattened 
 784-pixel vector loses the spatial detail (collar shape, sleeve length) 
-that would distinguish them — a known limitation of dense networks on 
+that would distinguish them , a known limitation of dense networks on 
 image data, and exactly the problem convolutional layers are designed 
 to solve.
 
 ## Notebook
 
-[`NumpyNet_fashion_mnist.ipynb`](./NumpyNet_fashion_mnist.ipynb) — full 
+[`NumpyNet_fashion_mnist.ipynb`](./NumpyNet_fashion_mnist.ipynb) , full 
 implementation, training run, confusion matrix, and analysis.
 
 ## Next
